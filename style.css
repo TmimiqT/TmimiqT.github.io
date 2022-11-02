@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover, header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+
+/* Tampilan Awal */
+
+#text
+{
+    position: absolute;
+    pointer-events: none;
+    white-space: nowrap;
+    font-size: 4vw;
+    color: #fff;
+    z-index: 9;
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding:  8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.2em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+.menu-icon
+{
+    width: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Animasi Tampilan Awal */
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#mountains_front
+{
+    z-index: 10;
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+    top: 10px;
+}
+
+/* Tab di html */
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px #1c0522;
+    background: #1c0522;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: #1c0522;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+  
+  /* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #fff;
+    color: #1c0522;
+}
+  
+  /* Create an active/current tablink class */
+.tab button.active {
+    background-color: #fff;
+    color: #1c0522;
+}
+  
+  /* Style the tab content */
+.tabcontent {
+    display: none;
+    border-top: none;
+}
+
+
+/* Scroll Bar */
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #888;
+} 
+
+/* Paragraf atau deskrpsi */
+
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.sec h2
+{
+    font-size: 3.6em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p, .sec ul
+{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+
+/* Resolusi HP */
+
+@media screen and (max-width: 600px){
+header
+{
+    padding: 25px 34px;
+}
+
+header .logo 
+{
+    font-size: 0.8em;
+}
+
+/* Menu Pop-Up */
+
+header ul
+{
+    width: 100%;
+    backdrop-filter: blur(50px);
+    position: absolute;
+    top: 64px;
+    right: 0;
+    z-index: 10000;
+}
+header ul li
+{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header ul li a:hover, header ul li a.active
+{
+    color: #fff;
+    background: none;
+}
+.menu-icon
+{
+    display: block;
+}
+#menuList
+{
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* Logo Dan Button Tampilan Awal*/
+
+#text
+{
+    font-size: 8.5vw;
+}
+#btn
+{
+    font-size: 0.8em;
+}
+
+/* Tab dan Tampilan*/
+
+.tab button {
+    font-size: 10px;
+}
+.sec
+{
+    padding: 28px;
+}
+.sec h2
+{
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+.sec p, .sec ul
+{
+    font-size: 1em;
+}
+
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan</title>
+        <link rel="stylesheet" type= "text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Achmad Hadi</a>
+            <ul id="menuList">
+                <li><a href="#" class="active">Tugas Latihan Tik</a></li>
+            </ul>
+            <img src="Background/menu.png" class="menu-icon" onclick="togglemenu()">
+        </header>
+
+        <section>
+            <img src="Background/stars.png" id="stars">
+            <img src="Background/moon.png" id="moon">
+            <img src="Background/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">FAKULTAS ITB</h2>
+            <a href="https://www.itb.ac.id/" target="_blank" id="btn">Baca Selengkapnya</a>
+            <img src="Background/mountains_front.png" id="mountains_front">
+        </section>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Sejarah</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Informasi pendaftaran</button>
+            <button class="tablinks" onclick="openCity(event, 'Peris')">Minat jurusan</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">pekerjaan</button>
+        </div>
+          
+        <div id="London" class="tabcontent">
+            <div class="sec" id="sec">
+                <h2>Sejarah ITB</h2>
+                <!--<img src="Background/Teleskop.jpg" width="460px" height="260px" style="float: right;position: center; margin: 10px; object-fit: cover;"/>-->
+                <p>
+                    <br><br>Sejarah Pendidikan Tinggi Teknik di Indonesia berawal pada abad ke-20, ketika pemerintah kolonial Belanda mendirikan de Techniche Hoogeschool te Bandung (TH) pada 3 Juli 1920 di lahan seluas 
+                    30 hektar di Bandung. Saat itu hanya terdapat satu fakultas yaitu de Faculteit van Technische Wetenschap dan hanya satu jurusan yaitu de afdeeling der We gen Waterbouw. Pendirian perguruan tinggi 
+                    ini dimaksudkan untuk memenuhi kebutuhan tenaga teknik yang semakin terbatas pada masa kolonial Belanda akibat pecahnya Perang Dunia pertama.
+                    <br><br>Sejak resmi dibuka untuk tahun kuliah 1920-1921, terdaftar 28 orang mahasiswa TH dengan hanya ada 2 orang Indonesia. Sementara itu, jumlah dosen pada permulaan tahun 1922 terdapat 12 orang 
+                    Guru Besar. Empat tahun kemudian, pada tanggal 4 Juli 1924 dilepaslah insinyur yang pertama dari TH berjumlah 12 orang. Status TH dari saat pembukaan sampai tahun 1924 adalah bijzondere school yang 
+                    kemudian berganti statusnya dari swasta menjadi instansi pemerintah.
+                    <br><br>Pada Dies ke-6 tanggal 3 Juli 1926, dari 22 orang kandidat insinyur yang lulus berjumlah 19 orang dengan 4 orang di antaranya adalah pribumi. Saat itulah untuk pertama kalinya TH Bandung 
+                    menghasilkan nsinyur orang Indonesia. Satu dari keempat orang itu adalah Ir. R Soekarno yang kelak menjadi proklamator sekaligus presiden pertama Republik Indonesia.
+                    <br><br>Kemudian saat pendudukan Jepang pada 1944-1945, TH berubah nama menjadi Bandung Kogyo Daigaku (BKD) dan menjadi Sekolah Tinggi Teknik (STT) Bandung setelah Indonesia merdeka. Selanjutnya pada 
+                    1946, sempat berpindah ke Yogyakarta dengan sebutan STT Bandung di Jogja yang kemudian menjadi Universitas Gadjah Mada (UGM). Pada 21 Juni 1946, terjadi perubahan nama menjadi Universiteit van 
+                    Indonesie di bawah kendali NICA dengan Faculteit van Technische Wetenschap dan Faculteit van Exacte Wetenschap berdiri kemudian. Setelah itu pada 1950-1959 menjadi bagian dari Universitas Indonesia 
+                    untuk Fakultas Teknik dan Fakultas Ilmu Pasti dan Ilmu Alam.
+                    <br><br>Didorong oleh gagasan dan keyakinan yang dilandasi semangat perjuangan proklamasi kemerdekaanserta wawasan ke masa depan, Pemerintah Indonesia meresmikan berdirinyaInstitut Teknologi Bandung 
+                    pada tanggal 2 Maret 1959. Berbeda dengan harkat pendirian lima perguruan tinggi teknik sebelumnya di kampus yang sama, Institut Teknologi Bandung lahir dalam suasana penuh dinamika mengemban misi 
+                    pengabdian ilmu pengetahuan dan teknologi, yang berpijak pada kehidupan nyata di bumi sendiri bagi kehidupan dan pembangunan bangsa yang maju dan bermartabat.
+                    <br><br><b>Kurun dasawarsa pertama</b> tahun 1960-an,ITB mulai membina dan melengkapi dirinya dengan kepranataan yang harus diadakan. Dalam periode ini dilakukan persiapan pengisian-pengisian organisasi 
+                    bidang pendidikan dan pengajaran, serta melengkapi jumlah dan meningkatkan kemampuan tenaga pengajar dengan penugasan belajar ke luar negeri.
+                    <br><br><b>Kurun dasawarsa kedua</b> tahun 1970-an,ITB diwarnai oleh masa sulit yang timbul menjelang periode pertama. Satuan akademis yang telah dibentuk berubah menjadi satuan kerja yang juga berfungsi 
+                    sebagai satuan sosial-ekonomi yang secara terbatas menjadi institusi semi-otonomi. Tingkat keakademikan makin meningkat, tetapi penugasan belajar ke luar negeri semakin berkurang. Sarana internal 
+                    dan kepranataan semakin dimanfaatkan.
+                    <br><br><b>Kurun dasawarsa ketiga</b> tahun 1980-an,ditandai dengan kepranataan dan proses belajar mengajar yang mulai memasuki era modern dengan sarana fisik kampus yang semakin dilengkapi. Jumlah 
+                    lulusan sarjanameningkat dan program pascasarjana mulai dibuka. Keadaan ini didukung oleh membaiknya kondisi sosio-politik dan ekonomi negara.
+                    <br><br><b>Kurun dasawarsa keempat</b> tahun 1990-an,perguruan tinggi teknik yang semula hanya mempunyai satu jurusan pendidikan, kini memiliki 26 Departemen Program Sarjana, termasuk Departemen Sosioteknologi, 
+                    34 Program Studi S2/Magister dan 3Bidang Studi S3/Doktor yang mencakup unsur-unsur ilmu pengetahuan, teknologi, seni, bisnis, dan ilmu-ilmu kemanusiaan.
+                </p>
+            </div>
+        </div>
+          
+        <div id="Paris" class="tabcontent">
+            <div class="sec" id="sec">
+                <h2>Informasi pendaftaran</h2>
+                <!--<img src="Background/Teleskop.jpg" width="460px" height="260px" style="float: right;position: center; margin: 10px; object-fit: cover;"/>-->
+                <p>
+                    <br><br>Sehubungan dengan terbitnya Peraturan Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi Republik Indonesia dengan nomor 48 Tahun 2022 tentang Penerimaan Mahasiswa Baru Program Diploma 
+                    dan Program Sarjana pada Perguruan Tinggi Negeri, mulai tahun 2023 yang akan datang, program Seleksi Nasional Masuk Perguruan Tinggi Negeri (SNMPTN) tidak lagi dilaksanakan. 
+                    Penerimaan mahasiswa baru di Perguruan Tinggi Negeri akan dilaksanakan melalui Seleksi Nasional Berdasarkan Prestasi (SNBP), yang dikelola oleh Balai Pengelolaan Pengujian Pendidikan 
+                    (BPPP), Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi Republik Indonesia.
+                </p>
+            </div>
+        </div>
+
+        <div id="Peris" class="tabcontent">
+            <div class="sec" id="sec">
+                <h2>Teknologi informasi</h2>
+                <!--<img src="Background/Teleskop.jpg" width="460px" height="260px" style="float: right;position: center; margin: 10px; object-fit: cover;"/>-->
+                <p>
+                    <br><br>Teknologi Informasi (TI), atau dalam bahasa Inggris dikenal dengan istilah Information technology (IT) adalah istilah umum untuk teknologi apa pun yang membantu manusia dalam membuat, 
+                    mengubah, menyimpan, mengomunikasikan dan/atau menyebarkan informasi. TI menyatukan komputasi dan komunikasi berkecepatan tinggi untuk data, suara, dan video. Contoh dari Teknologi Informasi 
+                    bukan hanya berupa komputer pribadi, tetapi juga telepon, TV, peralatan rumah tangga elektronik, dan peranti genggam modern (misalnya ponsel).
+                    <br><br>Pengolahan, penyimpanan dan penyebaran vokal, informasi bergambar, teks dan numerik oleh mikroelektronika berbasis kombinasi komputasi dan telekomunikasi. Istilah dalam pengertian 
+                    modern pertama kali muncul dalam sebuah artikel 1958 yang diterbitkan dalam Harvard Business Review, di mana penulis Leavitt dan Whisler berkomentar bahwa "teknologi baru belum memiliki nama 
+                    tunggal yang didirikan. Kita akan menyebutnya teknologi informasi (TI). ". Beberapa bidang modern yang muncul dari teknologi informasi adalah generasi berikutnya teknologi web, bioinformatika, 
+                    komputasi awan, sistem informasi global, Skala besar basis pengetahuan dan lain-lain.
+                    <br><br>TI adalah bidang pengelolaan teknologi dan mencakup berbagai bidang yang termasuk tetapi tidak terbatas pada hal-hal seperti proses, perangkat lunak komputer, sistem informasi, perangkat 
+                    keras komputer, bahasa pemrograman, dan data konstruksi. Singkatnya, apa yang membuat data, informasi atau pengetahuan yang dirasakan dalam format visual apapun, melalui setiap mekanisme 
+                    distribusi multimedia, dianggap bagian dari TI. TI menyediakan bisnis dengan empat set layanan inti untuk membantu menjalankan strategi bisnis: proses bisnis otomatisasi, memberikan informasi,
+                    menghubungkan dengan pelanggan, dan alat-alat produktivitas.
+                    <br><br>TI melakukan berbagai fungsi (TI Disiplin/Kompetensi) dari meng-instal Aplikasi untuk merancang jaringan komputer dan basis data informasi. Beberapa tugas yang TI lakukan mungkin 
+                    termasuk manajemen data, jaringan, rekayasa perangkat keras komputer, basis data dan desain perangkat lunak, serta manajemen dan administrasi sistem secara keseluruhan. Teknologi informasi mulai 
+                    menyebar lebih jauh dari konvensional komputer pribadi dan teknologi jaringan, dan lebih ke dalam integrasi teknologi lain seperti penggunaan ponsel, televisi, mobil, dan banyak lagi, yang 
+                    meningkatkan permintaan untuk pekerjaan .
+                </p>
+            </div>
+        </div>
+          
+        <div id="Tokyo" class="tabcontent">
+            <div class="sec" id="sec">
+                <h2>pekerjaan</h2>
+                <!--<img src="Background/Teleskop.jpg" width="460px" height="260px" style="float: right;position: center; margin: 10px; object-fit: cover;"/>-->
+                <p>
+                    <br><br>1. Information Security Analyst
+                    <br><br>Information security analyst bertugas untuk menganalisa suatu sistem dan membuatnya aman dari berbagai macam resiko keamanan cyber. Dalam menjalankan tugasnya, mereka perlu berpikir kreatif 
+                    dan teliti demi memastikan tidak ada celah yang membahayakan sistem yang dikerjakannya.
+                    <br><br>2. Artificial Intelligence (AI) / Machine Learning Engineer
+                    <br><br>AI/ML engineer bertugas mulai dari mengidentifikasi kebutuhan yang ada hingga merancang suatu sistem kecerdasan buatan sebagai solusi yang efisien. Belakangan, teknologi ini kerap dikembangkan 
+                    menjadi sebuah sistem IoT, sehingga koordinasi dalam tim menjadi lebih krusial.
+                    <br><br>3. Data Scientist
+                    <br><br>Data scientist bertugas mengumpulkan, menganalisis, dan mengambil kesimpulan dari berbagai macam data. Hasil riset tersebut akan digunakan sebagai dasar pengembangan teknologi baru.
+                    <br><br>4. Web Developer
+                    <br><br>Secara umum, web developer ada 3 jenis, yaitu:<br> <br>
+                    <ul>
+                        <li>Front-End Developer, bertugas mengatur bagian website yang terlihat oleh pengunjung, termasuk UX dan UI. </li>
+                        <li>Back-End Developer, bertugas mengatur elemen di belakang layar, misalnya server database.</li>
+                        <li>Full-Stack Developer, mencakup semua tugas front-end dan back-end sekaligus.</li>
+                    </ul><br>
+                </p>
+                <p>
+                    Dari ketiganya, full-stack developer adalah yang paling banyak dicari karena kemampuannya yang lebih komprehensif.
+                    <br><br>5. Software Development Engineer
+                    <br><br>Software development lebih rumit dari sekedar web development. Selain programming, ada berbagai aspek lain yang patut dipertimbangkan juga, misalnya kebutuhan spesifikasi, testing, dan operasional.
+                    <br><br>6. Computer Hardware Engineer
+                    <br><br>Itulah mengapa seorang computer hardware engineer banyak dicari oleh perusahaan produsen perangkat IT. Sebuah tim insinyur dalam bidang computer hardware akan memastikan teknologi 
+                    digital dapat dimanfaatkan seoptimal mungkin oleh banyak orang.
+                    <br><br>7. Cloud Architect
+                    <br><br>Cloud architect adalah insinyur IT yang berperan untuk memimpin segala proses kerja cloud computing, mulai dari tahap desain awal, pengaturan budget, pengembangan, hingga mitigasi resiko.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px"){
+                    menuList.style.maxHeight = "130px"
+                }else {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            document.getElementById("defaultOpen").click();
+
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.5 + 'px';
+                moon.style.top = value * 1.15 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginTop = value * 1 + 'px';
+                btn.style.marginTop = value * 1 + 'px';
+                header.style.top = value * 0.5 + 'px';
+                })
+        </script>
+    </body>
+</html>
